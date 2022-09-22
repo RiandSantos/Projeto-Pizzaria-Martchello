@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="static/images/favicon.png" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link href="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizzaria Martchello</title>
+</head>
+<body>
+    <nav>
+        <h2 class="logo">Martchello <span> Pizzaria </span></h2>
+        <button type="button">Cadastre-se</button>
+            <ul>
+                <li><a href="#">Pedidos-Restaurante</a></li>
+                <li><a href="#">Pedidos-Clientes</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+            </ul>
+            <div class="menu-openner"><span>0</span>🛒</div>
+    </nav>
+    
+    <section class="inicio">
+        <!-- aside do carrinho -->
+        <aside>
+           <div class="cart--area">
+               <div class="menu-closer">❌</div>
+               <h1>Suas Pizzas</h1>
+               <div class="cart"></div>
+               <div class="cart--details">
+                   <div class="cart--totalitem subtotal">
+                       <span>Subtotal</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--totalitem desconto">
+                       <span>Desconto</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--totalitem total big">
+                       <span>Total</span>
+                       <span>R$ --</span>
+                   </div>
+                   <div class="cart--finalizar">Finalizar a compra</div>
+               </div>
+           </div>
+       </aside>
+       <!-- /aside do carrinho -->
+       <header>
+
+        <div class="Conteudo">
+            <h1>Pizzaria Martchello</h1>
+            <div>
+            <h2>Mama mia martchello!</h2>
+            <a href="#PizzasProntas" class="vermenu">Ver menu</a>
+
+            <a href="#PizzasProntas" class="vermenumobile"><img src="./images/seta_pra_baixo-removebg-preview.png" alt=""></a>
+        </div>
+
+        </div>
+        <img class="img-pizza" src="https://pngimg.com/uploads/pizza/pizza_PNG7137.png" alt="pizza">
+
+    </header>
+</section>
+
+<!-- modelos de pizza na lista e no carrinho -->
+   <div class="models">
+
+       <!-- pizza na lista -->
+       <div class="pizza-item">
+           <a href="">
+               <div class="pizza-item--img"><img src="" /></div>
+               <div class="pizza-item--add">+</div>
+           </a>
+           <div class="pizza-item--price">R$ --</div>
+           <div class="pizza-item--name">--</div>
+           <div class="pizza-item--desc">--</div>
+       </div>
+        <!-- pizza no carrinho -->
+   <div class="cart--item">
+       <img src="" />
+       <div class="cart--item-nome">--</div>
+       <div class="cart--item--qtarea">
+           <button class="cart--item-qtmenos">-</button>
+           <div class="cart--item--qt">1</div>
+           <button class="cart--item-qtmais">+</button>
+       </div>
+   </div>
+
+</div>
+<main>
+
+
+   <h2 id="PizzasProntas">Pizzas Prontas</h2>
+
+   <div class="pizza-area"></div>
+
+<!-- /conteudo principal -->
+
+
+
+<!-- janela modal .pizzaWindowArea -->
+<div class="pizzaWindowArea">
+   <div class="pizzaWindowBody">
+       <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+       <div class="pizzaBig">
+           <img src="" />
+       </div>
+       <div class="pizzaInfo">
+           <h1>--</h1>
+           <div class="pizzaInfo--desc">--</div>
+           <div class="pizzaInfo--sizearea">
+               <div class="pizzaInfo--sector">Tamanho</div>
+               <div class="pizzaInfo--sizes">
+                   <div data-key="P" class="pizzaInfo--size">PEQUENA <span>--</span></div>
+                   <div data-key="M" class="pizzaInfo--size">MÉDIA <span>--</span></div>
+                   <div data-key="G" class="pizzaInfo--size selected">GRANDE <span>--</span></div>
+               </div>
+           </div>
+           <div class="pizzaInfo--pricearea">
+               <div class="pizzaInfo--sector">Preço</div>
+               <div class="pizzaInfo--price">
+                   <div class="pizzaInfo--actualPrice">R$ --</div>
+                   <div class="pizzaInfo--qtarea">
+                       <button class="pizzaInfo--qtmenos">-</button>
+                       <div class="pizzaInfo--qt">1</div>
+                       <button class="pizzaInfo--qtmais">+</button>
+                   </div>
+               </div>
+           </div>
+           <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+           <div class="pizzaInfo--cancelButton">Cancelar</div>
+       </div>
+   </div>
+</div>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img style="width:90px ;" src="https://images.vexels.com/media/users/3/197251/isolated/lists/6cfbab7e0350f9ed97967c04f2619d97-chef-bonito-com-pizza.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Mama mia martchello!</h4>
+                    <p class="chatbox__description--header">Meu nome é Arthurito. como posso ajudar?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Diga ola para Arthurito">
+                <button class="chatbox__send--footer send__button">Enviar</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
+</main>
+<!--footer-->
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>redes sociais</h2>
+            <div class="content">
+                <p class="content-p">Você pode nos seguir nas seguintes plataformas!</p>
+                <div class="social">
+                    <a href="#"><span class="fab fa-facebook-f"></span></a>
+                    <a href="#"><span class="fab fa-twitter"></span></a>
+                    <a href="#"><span class="fab fa-instagram"></span></a>
+                    <a href="#"><span class="fab fa-youtube"></span></a>
+                </div>
+            </div>
+        </div>
+        <!--left-->
+        <div class="center box">
+            <h2>informações adicionais</h2>
+            <div class="content">
+                <div class="cnpj">                        
+                    <span class="fas fa-bookmark"></span>
+                    <span class="text">XX. XXX. XXX/0001-XX</span>
+                </div>
+
+                <div class="telefone">
+                    <span class="fas fas fa-phone-alt"></span>
+                    <span class="text">+55 11 9999-9999</span>
+                </div>
+
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">exemplo@exemplo.com</span>
+                </div>
+            </div>
+        </div>
+        <!--right-->
+        <div class="right box">
+            <h2>Martchello São Paulo</h2>
+            <div class="content">
+                <div class="endereco">                        
+                    <span class="fas fa-house"></span>
+                    <span class="text">Rua Xpto 999 - Jardins São Paulo-SP</span>
+                </div>
+
+                <div class="cep">
+                    <span class="fas fa-globe"></span>
+                    <span class="text">CEP 01234-567</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--bottom-->
+    
+    <div class="bottom">
+        <div class="center">
+            <span class="credit">© 2022 São Paulo BRAZIL, inc. All rights reserved.</span>
+        </div>
+    </div>
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
+</body>
+</html>

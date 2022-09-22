@@ -1,0 +1,94 @@
+{
+    "intencoes": [
+        {
+            "acao": "greeting",
+            "padroes": [
+                "Olá, eu gostaria de fazer um pedido"
+            ],
+            "respostas": [
+                "Ola, boa noite, irei anotar o seu pedido, qual tamanho de pizza você deseja?"
+            ]
+        },
+        {
+            "acao": "goodbye",
+            "padroes": [
+                "Adeus"
+            ],
+            "respostas": [
+                "Obrigado pela preferencia"
+            ]
+        },
+        {
+            "acao": "thanks",
+            "padroes": [
+                "Obrigado pelo atendimento"
+            ],
+            "respostas": [
+                "Fico feliz em ter ajudado"
+            ]
+        },
+        {
+            "acao": "tamanho_pequeno",
+            "padroes":[
+                "Eu desejo uma pizza de tamanho pequeno"
+            ],
+            "respostas": [
+                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+            ]
+        },
+        {
+            "acao": "tamanho_medio",
+            "padroes":[
+                "Eu desejo uma pizza de tamanho medio"
+            ],
+            "respostas": [
+                "Certo! uma pizza medua exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+            ]
+        },
+        {
+            "acao": "tamanho_grande",
+            "padroes":[
+                "Eu desejo uma pizza do tamanho grande"
+            ],
+            "respostas": [
+                "Certo! uma pizza grande, tudo que é grande respectivamente é melhor!, agora, voce deseja uma pizza de quantos sabores"
+            ]
+        },
+        {
+            "acao": "completa",
+            "padroes":[
+                "Eu desejo uma pizza de um sabor só"
+            ],
+            "respostas": [
+                "Maravilha, qual sabor você deseja? "
+            ]
+        },
+        {
+            "acao": "meio_a_meio",
+            "padroes":[
+                "Eu desejo uma pizza de dois sabores"
+            ],
+            "respostas": [
+                "Maravilha, quais sabores você deseja ?"
+            ]
+        },
+        {
+            "acao": "tres_sabores",
+            "padroes":[
+                "Eu desejo uma pizza de tres sabores"
+            ],
+            "respostas": [
+                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+            ]
+        },
+        {
+            "acao": "tamanho_pequeno",
+            "padroes":[
+                "Eu desejo uma pizza de tamanho pequeno"
+            ],
+            "respostas": [
+                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+            ]
+        }
+    ]
+}
