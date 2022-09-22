@@ -58,11 +58,11 @@ $ cd chatbot-deployment
 $ python3 -m venv venv
 $ . venv/bin/activate
 ```
-Install dependencies
+Instalar as dependências
 ```
 $ (venv) pip install Flask torch torchvision nltk
 ```
-Install nltk package
+instalar pacote nltk
 ```
 $ (venv) python
 >>> import nltk
