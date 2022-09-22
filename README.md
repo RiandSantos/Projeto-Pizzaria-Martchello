@@ -51,7 +51,7 @@
  
  13-O prazo de entrega é de 40 minutos.
  
-## Clone repositorio
+## Clone o repositorio
 ```
 $ git clone https://github.com/python-engineer/chatbot-deployment.git
 $ cd chatbot-deployment
