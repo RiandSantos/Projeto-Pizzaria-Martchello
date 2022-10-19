@@ -11,14 +11,123 @@
 <body>
     <nav>
         <h2 class="logo">Martchello <span> Pizzaria </span></h2>
-        <button type="button">Cadastre-se</button>
+        <button type="button" onclick="myFunction()">Cadastre-se</button>
+     
             <ul>
-                <li><a href="./PedidosRestaurante.html">Pedidos-Restaurante</a></li>
-                <li><a href="./PedidosClientes.html">Pedidos-Clientes</a></li>
-                <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                <li><a href="#">Pedidos-Restaurante</a></li>
+                <li><a href="#">Pedidos-Clientes</a></li>
+                <li><a href="#">Sobre Nós</a></li>
             </ul>
             <div class="menu-openner"><span>0</span>🛒</div>
     </nav>
+
+
+ <!-- Cadastro e login -->
+
+ <div class="container" id="myDIV">
+    <div class="header">
+      <h2>Criar Uma Conta</h2>
+    </div>
+
+    <form id="form" class="form">
+      <div class="form-control">
+        <label for="username">Nome de usuário</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Digite seu nome de usuário..."
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Digite seu email.." />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Digite sua senha..."
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+
+      <div class="form-control">
+        <label for="password-confirmation">Confirmação de senha</label>
+        <input
+          type="password"
+          id="password-confirmation"
+          placeholder="Digite sua senha novamente..."
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensagem de erro</small>
+      </div>
+      
+
+      <button type="submit" id="btnCadastro">Cadastrar</button>
+
+      <button type="submit" id="btnLogin" onclick="myFunctionn()">Login</button>
+
+    </form>
+  </div>
+
+
+    <div class="container2"  id="myDIV2">
+        <div class="header">
+          <h2>Fazer Login</h2>
+        </div>
+  
+        <form id="form" class="form">
+          <div class="form-control">
+            <label for="username">Nome de usuário</label>
+            <input
+              type="text"
+              id="nomeLogin"
+              placeholder="Digite seu nome de usuário..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+  
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="emailLogin" placeholder="Digite seu email.." />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+  <div class="form-control">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              id="senhaLogin"
+              placeholder="Digite sua senha..."
+            />
+            <i class="fas fa-exclamation-circle"></i>
+            <i class="fas fa-check-circle"></i>
+            <small>Mensagem de erro</small>
+          </div>
+
+        
+  
+          <button type="submit" id="btnLogin">Login</button>
+  
+  
+
+        </form>
+      </div>
     
     <section class="inicio">
         <!-- aside do carrinho -->
@@ -158,6 +267,9 @@
     </div>
 </div>
 </main>
+
+
+
 <!--footer-->
 <footer>
     <div class="main-content">
@@ -223,5 +335,7 @@
     <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
     <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
+    <script src="./login.js"></script>
 </body>
 </html>

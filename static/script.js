@@ -176,7 +176,6 @@ const abrirCarrinho = () => {
         if(cart.length > 0) {
             seleciona('aside').classList.add('show')
             seleciona('aside').style.left = '0'
-            seleciona('aside').style.top = '0'
         }
     })
 }
@@ -204,7 +203,7 @@ const atualizarCarrinho = () => {
 
         // crie as variaveis antes do for
 		let subtotal = 0
-		let desconto = 0
+		let desconto = 10
 		let total    = 0
 
         // para preencher os itens do carrinho, calcular subtotal
@@ -262,7 +261,7 @@ const atualizarCarrinho = () => {
 		// fora do for
 		// calcule desconto 10% e total
 		//desconto = subtotal * 0.1
-		desconto = subtotal * 0
+		desconto = subtotal * 0.10
 		total = subtotal - desconto
 
 		// exibir na tela os resultados

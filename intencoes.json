@@ -1,93 +1,380 @@
 {
     "intencoes": [
         {
-            "acao": "greeting",
+            "acao": "saudacao",
             "padroes": [
-                "Olá, eu gostaria de fazer um pedido"
+                "Ola",
+                "Oi"
+                
             ],
             "respostas": [
-                "Ola, boa noite, irei anotar o seu pedido, qual tamanho de pizza você deseja?"
+                "Ola, boa noite, eu me chamo Arthurito, e irei te ajudar com o seu atendimento:\n <br><br> !PizzaInfo Sabor: para ver as infos sobre a pizza desejada.\n <br><br> !Sabores: para ver o nosso menu de sabores.\n <br><br> !Promocao: para ver as promocoes da semana.\n <br><br> !Tamanho: para ver o tamanho das pizzas em fatias <br><br> !Atendimento: para iniciar o seu atendimento."
             ]
         },
         {
-            "acao": "goodbye",
-            "padroes": [
-                "Adeus"
+            "acao":"pizza_tamanho",
+            "padroes":[
+                "!Tamanho"
             ],
-            "respostas": [
-                "Obrigado pela preferencia"
+            "respostas":[
+                "Tamanho das Pizzas\n <br><br> Grande: 12 fatias <br> Media: 8 fatias <br> Pequena: 6 fatias"
             ]
         },
         {
-            "acao": "thanks",
-            "padroes": [
-                "Obrigado pelo atendimento"
+            "acao":"pizza_sabores",
+            "padroes":[
+                "!Sabores"
+            ],
+            "respostas":[
+                "Sabores de Pizza\n <br><br> Salgadas:\n <br><br> Mussarela<br> Calabresa<br> Quatro Queijos<br> Brasileira<br> Portuguesa<br> Moda da casa<br> <br><br> Doce:\n <br><br> Banana com canela<br> Morango com chocolate"
+            ]
+        },
+        {
+            "acao":"pizza_promocao",
+            "padroes":[
+                "!Promocoes"
+            ],
+            "respostas":[
+                "Promocao da Semana!!!\n <br><br> Salgadas:\n <br><br> Mussarela: R$22,00 <br> Quatro Queijos: R$25,00 <br> Portuguesa: R$27,00 <br><br> Doce:\n <br><br> Banana com canela: R$28,00"
+            ]
+        },
+        {
+            "acao":"pizza_info_mussarela",
+            "padroes":[
+                "!PizzaInfo Mussarela"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza de Mussarela\n <br> Preco: R$25.00\n <br> Ingredientes: Molho de tomate, mussarela, calabresa fatiada e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_calabresa",
+            "padroes":[
+                "!PizzaInfo Calabresa"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza de Calabresa\n <br> Preco: R$26.00\n <br> Ingredientes: Molho de tomate, camada dupla de mussarela e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_quatro_queijos",
+            "padroes":[
+                "!PizzaInfo Quatro Queijos"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza de Quatro Queijos\n <br> Preco: R$28.00\n <br> Ingredientes: Molho de tomate, camadas de mussarela, provolone, parmessao, gorgonzola e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_brasileira",
+            "padroes":[
+                "!PizzaInfo Brasileira"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza Brasileira\n <br> Preco: R$30.00\n <br> Ingredientes: Molho de tomate, mussarela, calabresa picado, palmito, champignon, azeitonas e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_portuguesa",
+            "padroes":[
+                "!PizzaInfo Portuguesa"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza Portuguesa\n <br> Preco: R$29.00\n <br> Ingredientes: Molho de tomate, mussarela, presunto, ovos, cebolas, pimentao, azeitona e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_moda_da_casa",
+            "padroes":[
+                "!PizzaInfo Moda da Casa"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza a Moda da Casa\n <br> Preco: R$35.00\n <br> Ingredientes: Molho de tomate, mussarela, carne de sol, tomates em cubos, coentro, cebola, azeitona, catupiry e oregano"
+            ]
+        },
+        {
+            "acao":"pizza_info_banana_com_canela",
+            "padroes":[
+                "!PizzaInfo Banana com canela"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza banana com canela\n <br> Preco: R$32.00\n <br> Ingredientes: Banana, canela e acucar"
+            ]
+        },
+        {
+            "acao":"pizza_info_chocolate_com_morango",
+            "padroes":[
+                "!PizzaInfo Chocolate com morango"
+            ],
+            "respostas":[
+                "Informacao da Pizza <br><br> Nome: Pizza morango com chocolate\n <br> Preco: R$35.00\n <br> Ingredientes: Creme de leite, lascas de chocolate e morango"
+            ]
+        },
+        {
+            "acao": "atendimento",
+            "padroes":[
+                "!Atendimento"
             ],
             "respostas": [
-                "Fico feliz em ter ajudado"
+                "Certo! Irei fazer o seu atendimento, que tamanho de pizza o(a) senhor(a) deseja?"
             ]
         },
         {
             "acao": "tamanho_pequeno",
             "padroes":[
-                "Eu desejo uma pizza de tamanho pequeno"
+                "Uma pizza de tamanho pequeno",
+                "Pizza pequena"
             ],
             "respostas": [
-                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza completa ou mista?"
             ]
         },
         {
             "acao": "tamanho_medio",
             "padroes":[
-                "Eu desejo uma pizza de tamanho medio"
+                "Uma pizza de tamanho medio",
+                "Pizza media"
             ],
             "respostas": [
-                "Certo! uma pizza medua exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+                "Certo! uma pizza media exelente escolha, agora, voce deseja uma pizza completa ou mista?"
             ]
         },
         {
             "acao": "tamanho_grande",
             "padroes":[
-                "Eu desejo uma pizza do tamanho grande"
+                "Uma pizza de tamanho grande",
+                "Pizza grande"
             ],
             "respostas": [
-                "Certo! uma pizza grande, tudo que é grande respectivamente é melhor!, agora, voce deseja uma pizza de quantos sabores"
+                "Certo! uma pizza grande exelente escolha, agora, voce deseja uma pizza completa ou mista?"
             ]
         },
         {
             "acao": "completa",
             "padroes":[
-                "Eu desejo uma pizza de um sabor só"
+                "Completa"
             ],
             "respostas": [
-                "Maravilha, qual sabor você deseja? "
+                "Maravilha, qual sabor o senhor(a) deseja? "
             ]
         },
         {
             "acao": "meio_a_meio",
             "padroes":[
-                "Eu desejo uma pizza de dois sabores"
+                "Mista"
             ],
             "respostas": [
-                "Maravilha, quais sabores você deseja ?"
+                "Maravilha, qual primeiro sabor o(a) senhor(a) deseja?"
             ]
         },
         {
-            "acao": "tres_sabores",
+            "acao": "completa_sabor_calabresa",
             "padroes":[
-                "Eu desejo uma pizza de tres sabores"
+                "Uma pizza completa de calabresa",
+                "Sabor calabresa"
             ],
             "respostas": [
-                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+                "Otima escolha! uma pizza completa de calabresa, ela ira custar R$26,00"
             ]
         },
         {
-            "acao": "tamanho_pequeno",
+            "acao": "completa_sabor_americana",
             "padroes":[
-                "Eu desejo uma pizza de tamanho pequeno"
+                "Uma pizza completa de mussarela",
+                "Sabor mussarela"
             ],
             "respostas": [
-                "Certo! uma pizza pequena exelente escolha, agora, voce deseja uma pizza de quantos sabores?"
+                "Otima escolha! uma pizza completa de mussarela, ela ira custar R$25,00"
+            ]
+        },
+        {
+            "acao": "completa_sabor_quatro_queijos",
+            "padroes":[
+                "Uma pizza completa de quatro queijos",
+                "Sabor quatro queijos"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de quatro queijos, ela ira custar R$28,00"
+            ]
+        },
+        {
+            "acao": "completa_sabor_brasileira",
+            "padroes":[
+                "Uma pizza completa brasileira",
+                "Sabor brasileira"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa brasileira, ela ira custar R$30,00"
+            ]
+        },
+        {
+            "acao": "completa_sabor_portuguesa",
+            "padroes":[
+                "Uma pizza completa de portuguesa",
+                "Sabor portuguesa"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de portuguesa, ela ira custar R$30,00"
+            ]
+        },
+        {
+            "acao": "completa_sabor_moda_da_casa",
+            "padroes":[
+                "Uma pizza completa a moda da casa",
+                "Sabor Moda da Casa"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa a Moda da Casa, ela ira custar R$35,00"
+            ]
+        },
+        {
+            "acao": "completa_sabor_banana_com_canela",
+            "padroes":[
+                "Uma pizza completa de banana com canela",
+                "Sabor banana com canela"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de banana com canela, ela ira custar R$35,00"
+            ]
+        },
+        {
+            "acao": "completa_sabor_chocolate_com_morango",
+            "padroes":[
+                "Uma pizza completa de chocolate com morango",
+                "Sabor chocolate com morango"
+            ],
+            "respostas": [
+                "Otima escolha! uma pizza completa de banana com canela, ela ira custar R$35,00"
+            ]
+        },
+        {
+            "acao": "primeiro_sabor_misto",
+            "padroes":[
+                "Calabresa",
+                "Mussarela",
+                "Quatro queijos",
+                "Banana com canela"
+            ],
+            "respostas":[
+                "Primeiro sabor registrado! qual o segundo sabor?"
+            ]
+        },
+        {
+            "acao": "segundo_sabor_misto",
+            "padroes":[
+                "Brasileira",
+                "Portuguesa",
+                "Moda da Casa",
+                "Chocolate com morango"
+            ],
+            "respostas":[
+                "Pizza mista registrada! o valor e de R$XX,XX"
+            ]
+        },
+        {
+            "acao": "forma_de_pagamento",
+            "padroes":[
+                "Qual a forma de pagamento?",
+                "Aceitam pix?",
+                "Aceitam cartao de credito?",
+                "Aceitam dinheiro?"
+            ],
+            "respostas": [
+                "Aceitamos todas as formas de pagamento: dinheiro, cartao de credito e pix"
+            ]
+        },
+        {
+            "acao": "pagar_pix",
+            "padroes":[
+                "Irei pagar com pix",
+                "Pix"
+            ],
+            "respostas": [
+                "Insira a sua chave pix"
+            ]
+        },
+        {
+            "acao": "pagar_pix_chave",
+            "padroes":[
+                "(11)9999-99999"
+            ],
+            "respostas": [
+                "Pagamento confirmado, deseja retirar na loja ou entregador?"
+            ]
+        },
+        {
+            "acao": "pagar_dinheiro",
+            "padroes":[
+                "Irei pagar com dinheiro",
+                "Dinheiro"
+            ],
+            "respostas": [
+                "Pagamento confirmado, deseja retirar na loja ou entregador?"
+            ]
+        },
+        {
+            "acao": "pagar_cartao_de_credito",
+            "padroes":[
+                "Irei pagar com cartao de credito",
+                "Cartao de credito"
+            ],
+            "respostas": [
+                "Pagamento confirmado, deseja retirar na loja ou entregador?"
+            ]
+        },
+        {
+            "acao": "retirar_loja",
+            "padroes":[
+                "Irei retirar na pizzaria",
+                "Retirar"
+            ],
+            "respostas": [
+                "Retirar na loja, seu pedido ficara pronto em XX minutos, obrigado pela preferencia! <br><br> Digite 'sair' para encerrar o atendimento "
+            ]
+        },
+        {
+            "acao": "entregador",
+            "padroes":[
+                "Entregador"
+            ],
+            "respostas": [
+                "Entregador, O(A) senhor(a) possui um cadastro ?"
+            ]
+        },
+        {
+            "acao": "entregador_cadastro",
+            "padroes":[
+                "Sim"
+            ],
+            "respostas": [
+                "Cadastro cliente: XXXXXXXX / Endereco: XXXXXXXX <br><br> Em XX minutos o entregador estara em sua casa! Obrigado pela preferencia! <br><br> Digite 'sair' encerrar o atendimento"
+            ]
+        },
+        {
+            "acao": "entregador_nao_cadastrado",
+            "padroes":[
+                "Nao"
+            ],
+            "respostas": [
+                "Por favor insira o seu nome e seu endereco entre '/' <br><br> Ex: nome: Arthurito / Endereco: XXXXXXXX"
+            ]
+        },
+        {
+            "acao": "colocando_informaçoes_da_entrega",
+            "padroes":[
+                "Nome: XXXXXXXX / Endereco: XXXXXXXX"
+            ],
+            "respostas": [
+                "Em XX minutos o entregador estara em sua casa! Obrigado pela preferencia! <br><br> Digite 'sair' encerrar o atendimento"
+            ]
+        },
+        {
+            "acao": "despedida",
+            "padroes":[
+                "Sair"
+            ],
+            "respostas": [
+                "Atendimento encerrado!"
             ]
         }
     ]

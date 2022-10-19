@@ -72,7 +72,7 @@ Modify `intents.json` with different intents and responses for your Chatbot
 
 Run
 ```
-$ (venv) python treino.py
+$ (venv) python train.py
 ```
 This will dump data.pth file. And then run
 the following command to test it in the console.

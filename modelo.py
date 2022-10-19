@@ -16,3 +16,4 @@ class RedeNeural(nn.Module):
         saida = self.relu(saida)
         saida = self.l3(saida)
         return saida
+        

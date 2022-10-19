@@ -1,3 +1,0 @@
-FLASK_ENV=desenvolvimento
-
-FLASK_APP=principal.py

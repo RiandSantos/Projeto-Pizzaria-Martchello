@@ -23,3 +23,5 @@ def mochila_de_palavras(tokenizacao_sentenca, todas_palavras):
             mochila[idx] = 1.0
 
     return mochila
+
+

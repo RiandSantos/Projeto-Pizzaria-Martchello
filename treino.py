@@ -101,3 +101,8 @@ FILE = "data.pth"
 torch.save(data, FILE)
 
 print(f'treino completo. arquivo salvo para {FILE}')
+
+
+
+
+
