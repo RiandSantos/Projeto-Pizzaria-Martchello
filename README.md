@@ -82,3 +82,7 @@ $ (venv) python chat.py
 
 Now for deployment follow my tutorial to implement `app.py` and `app.js`.
 
+
+![image](https://user-images.githubusercontent.com/95653155/199626501-6ba81eab-fad3-4f62-932e-ebfe6c5db7c8.png)
+
+
