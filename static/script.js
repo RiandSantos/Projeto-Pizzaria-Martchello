@@ -341,3 +341,7 @@ adicionarNoCarrinho()
 atualizarCarrinho()
 fecharCarrinho()
 finalizarCompra()
+
+
+
+

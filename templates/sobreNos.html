@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="static/images/favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styleSobre.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+    <title>Sobre Nós</title>
+</head>
+
+<body>
+    <nav>
+        <h2 class="logo">Martchello <span> Pizzaria </span></h2>
+        <button type="button"><a href="/">Home</a></button>
+
+        <ul>
+            <li><a href="pedidoRestaurante">Pedidos-Restaurante</a></li>
+            <li><a href="PedidoCliente">Pedidos-Clientes</a></li>
+            <li><a style="color:red;">Sobre Nós</a></li>
+        </ul>
+    </nav>
+
+    <section class="fundosb">
+
+<div class="firstAnimation">
+    
+    <div class="secondAnimation">
+        <div class="cardsb">
+            <h2>Historia da pizzaria</h2>
+           <P> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </P>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<h1 class="txtPt">Time de desenvolvimento</h1>
+<section class="corpo">
+
+
+    <section>
+
+    <!-- card 1 -->
+
+    <div class="card1 card">
+        <div class="card-info">
+            <p class="title">Guilherme da Rocha</p>
+            <p class="subtitle">Web Dev</p>
+        </div>
+        <div class="card-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    </div>
+
+       <!-- card 2-->
+
+    <div class="card2 card">
+        <div class="card-info">
+            <p class="title">Danillo Macário</p>
+            <p class="subtitle">Web Dev</p>
+        </div>
+        <div class="card-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    </div>
+
+           <!-- card 3-->
+
+
+    <div class="card3 card">
+        <div class="card-info">
+            <p class="title">Lucas Stoico Quirino</p>
+            <p class="subtitle">Web Dev</p>
+        </div>
+        <div class="card-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    </div>
+
+           <!-- card 4-->
+
+
+    <div class="card4 card">
+        <div class="card-info">
+            <p class="title"> Lucas Felipe</p>
+            <p class="subtitle">Web Dev</p>
+        </div>
+        <div class="card-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    </div>
+
+               <!-- card 5-->
+
+    <div class="card5 card">
+        <div class="card-info">
+            <p class="title">Rian dos Santos</p>
+            <p class="subtitle">Web Dev</p>
+        </div>
+        <div class="card-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    </div>
+
+        
+               <!-- card 6-->
+
+    <div class="card6 card">
+        <div class="card-info">
+            <p class="title">Joana D'arc</p>
+            <p class="subtitle">Desenvolvedora Web</p>
+        </div>
+        <div class="card-bio">
+            <p>Responsavel pelo desenvolvimento do site e o Bot</p>
+        </div>
+    </div>
+    </div>
+
+        
+               <!-- card 7-->
+
+    <div class="card7 card">
+        <div class="card-info">
+            <p class="title">Ricardo</p>
+            <p class="subtitle">Web Dev</p>
+        </div>
+        <div class="card-bio">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+    </div>
+
+</section>
+</section>
+</body>
+<script>
+    $SCRIPT_ROOT = {{ request.script_root | tojson }};
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+<script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
+<script src="./scripts.js"></script>
+<script src="./login.js"></script>
+</body>
+
+</html>

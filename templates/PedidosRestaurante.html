@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="static/images/favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pedidos do Restaurante</title>
+  </head>
+  <body>
+    <nav>
+      <h2 class="logo">Martchello <span> Pizzaria </span></h2>
+      <button type="button"><a href="/">Home</a></button>
+   
+          <ul>
+            <li><a href="pedidoRestaurante" style="color:red;">Pedidos-Restaurante</a></li>
+            <li><a href="PedidoCliente">Pedidos-Clientes</a></li>
+              <li><a href="Sobre">Sobre Nós</a></li>
+          </ul>
+  </nav>
+  </body>
+    <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='pizzas.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="https://kit.fontawesome.com/e32382d952.js" crossorigin="anonymous"></script>
+  <script src="./scripts.js"></script>
+  <script src="./login.js"></script>
+  </body>
+</html>

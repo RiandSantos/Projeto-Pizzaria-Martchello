@@ -7,7 +7,7 @@ const loginBtn = document.getElementById("btnLogin");
 cadastrar.addEventListener("click", (e) => {
   e.preventDefault();
 
-  window.location = "./base.html";
+  window.location = "login";
 
 });
 
